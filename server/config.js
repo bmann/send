@@ -62,7 +62,7 @@ const conf = convict({
   redis_host: {
     format: String,
     default: 'localhost',
-    env: 'REDIS_HOST'
+    env: 'REDIS_URL'
   },
   redis_event_expire: {
     format: Boolean,
@@ -76,9 +76,9 @@ const conf = convict({
   },
   listen_port: {
     format: 'port',
-    default: 1443,
+    default: 3000,
     arg: 'port',
-    env: 'PORT'
+    env: 'NODE_PORT'
   },
   amplitude_id: {
     format: String,

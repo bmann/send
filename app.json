@@ -1,0 +1,22 @@
+{
+    "name": "Firefox Send on Heroku",
+    "description": "A version of Firefox Send that you can self-deploy to Heroku",
+    "repository": "https://github.com/bmann/send",
+    "buildpacks": [{
+      "url": "https://github.com/heroku/heroku-buildpack-nginx.git"
+    }, {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }],
+    "env": {
+        "BASE_URL": {
+          "description": "https://YOURHEROKUAPP.herokuapp.com, including https",
+          "value": "https://YOURHEROKUAPP.herokuapp.com"
+        }
+      },
+      "addons": [
+        "heroku-redis",
+        {
+          "plan": "heroku-redis:hobby-dev"
+        }
+      ]
+  }

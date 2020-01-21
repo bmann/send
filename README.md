@@ -96,6 +96,12 @@ Pull requests are always welcome! Feel free to check out the list of ["good firs
 
 see also [docs/deployment.md](docs/deployment.md)
 
+### Deploy to Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+* Using Nginx and NodeJS buildpack, sample config for proxy https://github.com/ahawkin/heroku-nginx-proxy-node
+
 ---
 
 ## Android
